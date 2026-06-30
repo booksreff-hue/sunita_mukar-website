@@ -8,7 +8,7 @@ const CREDENTIALS = [
 
 export default function MarqueeSection() {
   return (
-    <div className="py-3 md:py-4 overflow-hidden border-y" style={{ background: '#A3D4D0', borderColor: 'rgba(0,0,0,0.06)' }}>
+    <div className="py-3 md:py-4 overflow-hidden border-y" style={{ background: '#8DCAC4', borderColor: 'rgba(0,0,0,0.06)' }}>
       <div className="marquee-track flex gap-12 w-fit" style={{ animation: 'marquee 30s linear infinite' }}>
         {[...Array(2)].map((_, dupIdx) => (
           <div key={dupIdx} className="flex gap-12 items-center flex-shrink-0">

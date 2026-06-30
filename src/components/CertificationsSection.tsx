@@ -23,7 +23,7 @@ export default function CertificationsSection() {
         <FadeIn y={30}>
           <p className="section-label">Credentials</p>
           <h2 className="font-heading text-[clamp(1.8rem,6vw,4rem)] leading-tight font-semibold mb-8 md:mb-10" style={{ color: '#1A3330' }}>
-            Certifications &amp; <em className="font-light italic not-italic" style={{ color: '#6DB8B8' }}>Qualifications</em>
+            Certifications &amp; <em className="font-light italic not-italic" style={{ color: '#5DA8A8' }}>Qualifications</em>
           </h2>
         </FadeIn>
 
@@ -63,10 +63,10 @@ export default function CertificationsSection() {
                   <div className="aspect-[4/3] w-full flex items-center justify-center p-6"
                     style={{ background: '#F0F2F8' }}>
                     <div className="text-center">
-                      <div className="font-heading text-[clamp(1.2rem,2.5vw,1.8rem)] font-semibold leading-tight mb-2" style={{ color: '#6DB8B8' }}>
+                      <div className="font-heading text-[clamp(1.2rem,2.5vw,1.8rem)] font-semibold leading-tight mb-2" style={{ color: '#5DA8A8' }}>
                         MA English Lit
                       </div>
-                      <div className="font-heading text-[clamp(0.9rem,1.8vw,1.3rem)] font-semibold" style={{ color: '#A3D4D0' }}>
+                      <div className="font-heading text-[clamp(0.9rem,1.8vw,1.3rem)] font-semibold" style={{ color: '#8DCAC4' }}>
                         MBA HR · B.Ed
                       </div>
                       <div className="text-[0.6rem] uppercase tracking-widest mt-2" style={{ color: '#6B7D79' }}>

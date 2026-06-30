@@ -14,7 +14,7 @@ export default function ServicesSection() {
       id="services"
       className="py-[130px] max-md:py-20 relative z-10"
       style={{
-        background: '#F5F2F8',
+        background: '#EDE8F5',
         borderRadius: '48px 48px 0 0',
         marginTop: '-24px',
       }}

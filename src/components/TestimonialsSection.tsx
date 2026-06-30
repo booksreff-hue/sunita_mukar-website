@@ -50,7 +50,7 @@ export default function TestimonialsSection() {
       id="testimonials"
       className="py-[130px] max-md:py-20 relative z-10"
       style={{
-        background: '#F5F2F8',
+        background: '#EDE8F5',
         borderRadius: '48px 48px 0 0',
         marginTop: '-24px',
       }}
@@ -59,7 +59,7 @@ export default function TestimonialsSection() {
         <FadeIn y={30}>
           <p className="section-label">Testimonials</p>
           <h2 className="font-heading text-[clamp(1.8rem,6vw,4rem)] leading-tight font-semibold mb-8 md:mb-10" style={{ color: '#1A3330' }}>
-            What Individuals <em className="font-light italic not-italic" style={{ color: '#6DB8B8' }}>Say</em>
+            What Individuals <em className="font-light italic not-italic" style={{ color: '#5DA8A8' }}>Say</em>
           </h2>
         </FadeIn>
 

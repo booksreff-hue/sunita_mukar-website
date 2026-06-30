@@ -35,7 +35,7 @@ export default function ContactSection() {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: 'radial-gradient(ellipse 55% 55% at 50% 50%, rgba(109,184,184,0.15) 0%, transparent 70%)',
+          background: 'radial-gradient(ellipse 55% 55% at 50% 50%, rgba(93,168,168,0.15) 0%, transparent 70%)',
         }}
       />
 

@@ -64,7 +64,7 @@ export default function HeroSection() {
       <div className="absolute inset-0 pointer-events-none"
         style={{
           background: `
-            radial-gradient(ellipse 70% 70% at 60% 40%, rgba(109,184,184,0.2) 0%, transparent 65%),
+            radial-gradient(ellipse 70% 70% at 60% 40%, rgba(93,168,168,0.2) 0%, transparent 65%),
             radial-gradient(ellipse 40% 50% at 20% 80%, rgba(212,129,106,0.1) 0%, transparent 60%)
           `,
         }}
@@ -86,7 +86,7 @@ export default function HeroSection() {
               <span className="block font-heading text-[clamp(3rem,13vw,7rem)] font-bold leading-[1.05]" style={{ color: '#1A3330' }}>
                 Sunita
               </span>
-              <span className="block font-heading text-[clamp(3rem,13vw,7rem)] font-light italic leading-[1.05]" style={{ color: '#6DB8B8' }}>
+              <span className="block font-heading text-[clamp(3rem,13vw,7rem)] font-light italic leading-[1.05]" style={{ color: '#5DA8A8' }}>
                 Mukar
               </span>
             </motion.h1>

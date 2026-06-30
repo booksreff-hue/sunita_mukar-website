@@ -15,7 +15,7 @@ export default function Navbar() {
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 px-5 md:px-16 py-3.5 md:py-4 flex items-center justify-between"
       style={{
-        background: 'linear-gradient(to bottom, rgba(242,248,245,0.95), rgba(255,247,240,0))',
+        background: 'linear-gradient(to bottom, rgba(230,242,237,0.95), rgba(255,247,240,0))',
         backdropFilter: 'blur(12px)',
         WebkitBackdropFilter: 'blur(12px)',
       }}>
@@ -55,7 +55,7 @@ export default function Navbar() {
             exit={{ opacity: 0, x: 280 }}
             transition={{ duration: 0.35, ease: [0.22, 1, 0.36, 1] }}
             className="fixed top-0 right-0 w-[300px] h-full backdrop-blur-xl flex flex-col gap-8 p-8 pt-28 md:hidden"
-            style={{ background: 'rgba(242,248,245,0.98)' }}
+            style={{ background: 'rgba(230,242,237,0.98)' }}
           >
             {links.map((link) => (
               <a

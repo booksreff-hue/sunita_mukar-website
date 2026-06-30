@@ -13,7 +13,7 @@ export default function AboutSection() {
           <FadeIn x={-30} y={0}>
             <p className="section-label">About the Counsellor</p>
             <h2 className="font-heading text-[clamp(1.8rem,6vw,4rem)] leading-tight font-semibold" style={{ color: '#1A3330' }}>
-              Helping you discover a career&nbsp;<em className="font-light italic not-italic" style={{ color: '#6DB8B8' }}>that fits who you are</em>
+              Helping you discover a career&nbsp;<em className="font-light italic not-italic" style={{ color: '#5DA8A8' }}>that fits who you are</em>
             </h2>
             <div className="mt-5 md:mt-6 space-y-4 text-[1.05rem] md:text-[0.97rem] leading-relaxed text-text-light">
               <p>
@@ -33,8 +33,8 @@ export default function AboutSection() {
                   key={chip}
                   className="px-4 py-2 md:py-1.5 rounded-full text-[0.8rem] md:text-[0.72rem] tracking-wide"
                   style={{
-                    background: 'rgba(109,184,184,0.15)',
-                    border: '1px solid rgba(109,184,184,0.4)',
+                    background: 'rgba(93,168,168,0.15)',
+                    border: '1px solid rgba(93,168,168,0.4)',
                     color: '#1A3330',
                   }}
                 >

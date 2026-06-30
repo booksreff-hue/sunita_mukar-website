@@ -7,7 +7,7 @@
 @layer base {
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-  body{background:#F2F8F5;color:#2D403C;overflow-x:hidden;width:100%;font-size:16px}
+  body{background:#E6F2ED;color:#2D403C;overflow-x:hidden;width:100%;font-size:16px}
   img{display:block;max-width:100%;height:auto}
   a{text-decoration:none;color:inherit}
   ul{list-style:none}
@@ -19,7 +19,7 @@
 
 @layer components {
   .gradient-text {
-    background: linear-gradient(155deg, #6DB8B8 0%, #B8A6D4 55%, #D4816A 100%);
+    background: linear-gradient(155deg, #5DA8A8 0%, #B8A6D4 55%, #D4816A 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
