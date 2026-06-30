@@ -35,7 +35,7 @@ export default function ContactSection() {
       <div
         className="absolute inset-0 pointer-events-none"
         style={{
-          background: 'radial-gradient(ellipse 55% 55% at 50% 50%, rgba(27,107,107,0.14) 0%, transparent 70%)',
+          background: 'radial-gradient(ellipse 55% 55% at 50% 50%, rgba(109,184,184,0.15) 0%, transparent 70%)',
         }}
       />
 
@@ -46,7 +46,7 @@ export default function ContactSection() {
             Let&apos;s Connect
           </h2>
           <p className="text-base text-text-muted max-w-[400px] mx-auto leading-relaxed mb-12">
-            Ready to begin your journey? Reach out and let&apos;s find the path that works for you.
+            Ready to discover a career that fits who you are? Reach out and let&apos;s find your path together.
           </p>
         </FadeIn>
 
@@ -58,10 +58,10 @@ export default function ContactSection() {
                 href={s.href}
                 target={s.href.startsWith('http') ? '_blank' : undefined}
                 rel={s.href.startsWith('http') ? 'noopener' : undefined}
-                className="inline-flex items-center gap-2 rounded-[40px] px-5 md:px-6 py-3.5 md:py-3 text-[0.8rem] md:text-[0.76rem] uppercase tracking-[0.12em] text-text-light transition-all duration-200 hover:text-gold hover:-translate-y-0.5"
-                style={{ border: '1px solid rgba(255,255,255,0.10)' }}
-                onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#C9A84C' }}
-                onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'rgba(255,255,255,0.10)' }}
+                className="inline-flex items-center gap-2 rounded-[40px] px-5 md:px-6 py-3.5 md:py-3 text-[0.8rem] md:text-[0.76rem] uppercase tracking-[0.12em] transition-all duration-200 hover:-translate-y-0.5"
+                style={{ border: '1px solid rgba(0,0,0,0.08)', color: '#2D403C' }}
+                onMouseEnter={(e) => { e.currentTarget.style.borderColor = '#D4816A'; e.currentTarget.style.color = '#D4816A' }}
+                onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'rgba(0,0,0,0.08)'; e.currentTarget.style.color = '#2D403C' }}
                 aria-label={s.label}
               >
                 <svg viewBox="0 0 24 24" className="w-4 h-4 flex-shrink-0" fill={s.stroke ? 'none' : 'currentColor'} stroke={s.stroke ? 'currentColor' : 'none'} strokeWidth={s.stroke ? 2 : 0} strokeLinecap="round" strokeLinejoin="round">
@@ -76,7 +76,7 @@ export default function ContactSection() {
 
         <FadeIn y={20} delay={0.25}>
           <a href="#contact" className="btn-primary !px-10 md:!px-12 !py-4 md:!py-[18px] !text-[0.9rem] md:!text-[0.85rem] w-full md:w-auto">
-            Book a Free Trial Session
+            Book a Free Counselling Session
           </a>
         </FadeIn>
       </div>

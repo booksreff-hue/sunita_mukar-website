@@ -22,8 +22,8 @@ export default function CertificationsSection() {
       <div className="contain">
         <FadeIn y={30}>
           <p className="section-label">Credentials</p>
-          <h2 className="font-heading text-[clamp(1.8rem,6vw,4rem)] leading-tight text-white font-semibold mb-8 md:mb-10">
-            Certifications &amp; <em className="font-light italic text-teal-light not-italic">Qualifications</em>
+          <h2 className="font-heading text-[clamp(1.8rem,6vw,4rem)] leading-tight font-semibold mb-8 md:mb-10" style={{ color: '#1A3330' }}>
+            Certifications &amp; <em className="font-light italic not-italic" style={{ color: '#6DB8B8' }}>Qualifications</em>
           </h2>
         </FadeIn>
 
@@ -33,8 +33,8 @@ export default function CertificationsSection() {
               <div
                 className="rounded-2xl overflow-hidden cursor-pointer transition-all duration-300"
                 style={{
-                  background: 'rgba(255,255,255,0.03)',
-                  border: '1px solid rgba(255,255,255,0.07)',
+                  background: '#F8FBF9',
+                  border: '1px solid rgba(0,0,0,0.06)',
                 }}
                 onClick={() => cert.img && setLightboxImg(cert.img)}
                 onKeyDown={(e) => { if (e.key === 'Enter' && cert.img) setLightboxImg(cert.img) }}
@@ -42,14 +42,14 @@ export default function CertificationsSection() {
                 tabIndex={0}
                 aria-label={`View ${cert.label} certificate`}
                 onMouseEnter={(e) => {
-                  e.currentTarget.style.borderColor = 'rgba(201,168,76,0.4)'
+                  e.currentTarget.style.borderColor = 'rgba(212,129,106,0.4)'
                   e.currentTarget.style.transform = 'translateY(-4px)'
-                  e.currentTarget.style.background = 'rgba(255,255,255,0.06)'
+                  e.currentTarget.style.boxShadow = '0 8px 24px rgba(212,129,106,0.15)'
                 }}
                 onMouseLeave={(e) => {
-                  e.currentTarget.style.borderColor = 'rgba(255,255,255,0.07)'
+                  e.currentTarget.style.borderColor = 'rgba(0,0,0,0.06)'
                   e.currentTarget.style.transform = 'translateY(0)'
-                  e.currentTarget.style.background = 'rgba(255,255,255,0.03)'
+                  e.currentTarget.style.boxShadow = 'none'
                 }}
               >
                 {cert.img ? (
@@ -61,15 +61,15 @@ export default function CertificationsSection() {
                   />
                 ) : (
                   <div className="aspect-[4/3] w-full flex items-center justify-center p-6"
-                    style={{ background: 'rgba(255,255,255,0.04)' }}>
+                    style={{ background: '#F0F2F8' }}>
                     <div className="text-center">
-                      <div className="font-heading text-gold/60 text-[clamp(1.2rem,2.5vw,1.8rem)] font-semibold leading-tight mb-2">
+                      <div className="font-heading text-[clamp(1.2rem,2.5vw,1.8rem)] font-semibold leading-tight mb-2" style={{ color: '#6DB8B8' }}>
                         MA English Lit
                       </div>
-                      <div className="font-heading text-gold/50 text-[clamp(0.9rem,1.8vw,1.3rem)] font-semibold">
+                      <div className="font-heading text-[clamp(0.9rem,1.8vw,1.3rem)] font-semibold" style={{ color: '#A3D4D0' }}>
                         MBA HR · B.Ed
                       </div>
-                      <div className="text-[0.6rem] uppercase tracking-widest text-text-muted/60 mt-2">
+                      <div className="text-[0.6rem] uppercase tracking-widest mt-2" style={{ color: '#6B7D79' }}>
                         Academic Credentials
                       </div>
                     </div>
@@ -91,11 +91,14 @@ export default function CertificationsSection() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className="fixed inset-0 z-[200] flex items-center justify-center p-10"
-            style={{ background: 'rgba(6,15,30,0.95)' }}
+            style={{ background: 'rgba(0,0,0,0.85)' }}
             onClick={() => setLightboxImg(null)}
           >
             <button
-              className="absolute top-6 right-8 text-white text-3xl cursor-pointer bg-none border-none leading-none hover:text-gold transition-colors z-10"
+              className="absolute top-6 right-8 text-3xl cursor-pointer bg-none border-none leading-none z-10 transition-colors"
+              style={{ color: '#FFFFFF' }}
+              onMouseEnter={(e) => e.currentTarget.style.color = '#D4816A'}
+              onMouseLeave={(e) => e.currentTarget.style.color = '#FFFFFF'}
               onClick={() => setLightboxImg(null)}
               aria-label="Close lightbox"
             >

@@ -1,12 +1,11 @@
 import FadeIn from './FadeIn'
 
 const SERVICES = [
-  { num: '01', name: 'Spoken English', desc: 'Master fluent, natural English for everyday conversation, professional meetings, and social settings. Build the confidence to speak without hesitation.' },
-  { num: '02', name: 'IELTS & PTE Preparation', desc: 'Targeted training for academic and general IELTS and PTE exams. Proven strategies, mock tests, and personalised feedback to achieve your target band.' },
-  { num: '03', name: 'Personality Development', desc: 'Develop a compelling personal presence — from dressing with intention to speaking with authority. Designed for professionals and students alike.' },
-  { num: '04', name: 'Creative Writing', desc: 'Explore the craft of writing — from storytelling and essays to business communication. Find your voice on the page with structured guidance.' },
-  { num: '05', name: 'Career Counselling', desc: 'Navigate your career path with clarity. Get one-on-one guidance on resume building, interview preparation, and long-term career strategy.' },
-  { num: '06', name: 'Corporate Training', desc: 'Tailored programmes for organisations — business English, cross-cultural communication, presentation skills, and leadership communication.' },
+  { num: '01', name: 'Subject Selection (Grades 7–10)', desc: 'Help young students identify their strengths and interests early, guiding them toward the right subjects that align with their natural abilities and academic goals.' },
+  { num: '02', name: 'Stream Selection (Grades 11–12)', desc: 'Provide structured guidance for choosing the right academic stream — Science, Commerce, or Arts — based on psychometric insights and long-term career prospects.' },
+  { num: '03', name: 'Career Planning for Graduates', desc: 'Support recent graduates in navigating entry-level opportunities, further education choices, and building a career roadmap that matches their qualifications and aspirations.' },
+  { num: '04', name: 'Career Guidance for Professionals', desc: 'Help working professionals evaluate their current trajectory, explore career switches, and plan strategic moves for growth and fulfilment.' },
+  { num: '05', name: 'Psychometric Assessments', desc: 'Administer and interpret scientific psychometric assessments to map personality traits, aptitudes, and interests — enabling data-driven career decisions.' },
 ]
 
 export default function ServicesSection() {
@@ -15,7 +14,7 @@ export default function ServicesSection() {
       id="services"
       className="py-[130px] max-md:py-20 relative z-10"
       style={{
-        background: '#060F1E',
+        background: '#F5F2F8',
         borderRadius: '48px 48px 0 0',
         marginTop: '-24px',
       }}
@@ -31,17 +30,17 @@ export default function ServicesSection() {
         {SERVICES.map((svc, i) => (
           <FadeIn key={svc.num} y={24} delay={i * 0.08}>
             <div
-              className="flex flex-col md:flex-row md:items-start gap-2 md:gap-8 py-7 md:py-9 border-y border-white/10"
-              style={{ borderBottomWidth: i === SERVICES.length - 1 ? 1 : 0 }}
+              className="flex flex-col md:flex-row md:items-start gap-2 md:gap-8 py-7 md:py-9 border-y"
+              style={{ borderColor: 'rgba(0,0,0,0.06)', borderBottomWidth: i === SERVICES.length - 1 ? 1 : 0 }}
             >
               <span
                 className="font-heading text-[clamp(2rem,5.5vw,5rem)] font-semibold leading-none flex-shrink-0"
-                style={{ color: 'rgba(201,168,76,0.2)', minWidth: '90px' }}
+                style={{ color: 'rgba(212,129,106,0.3)', minWidth: '90px' }}
               >
                 {svc.num}
               </span>
               <div>
-                <h3 className="text-[1.05rem] md:text-[clamp(0.9rem,1.8vw,1.35rem)] uppercase tracking-[0.1em] text-white font-medium mb-2">
+                <h3 className="text-[1.05rem] md:text-[clamp(0.9rem,1.8vw,1.35rem)] uppercase tracking-[0.1em] font-medium mb-2" style={{ color: '#1A3330' }}>
                   {svc.name}
                 </h3>
                 <p className="text-[1rem] md:text-[0.9rem] text-text-muted leading-relaxed max-w-[540px] font-light">

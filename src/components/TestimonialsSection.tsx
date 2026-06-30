@@ -21,24 +21,24 @@ type Testimonial = {
 
 const TESTIMONIALS: Testimonial[] = [
   {
-    quote: "Sunita ma'am transformed the way I approach English. I went from dreading presentations to actually looking forward to them. Her patience and structured approach made all the difference.",
-    author: 'Aisha Rahman',
-    origin: 'UAE · IELTS Preparation',
+    quote: "Sunita's career counselling helped me choose the right stream after 10th grade. I was confused between Science and Commerce, but her psychometric assessment gave me clarity. I'm now thriving in my chosen field.",
+    author: 'Riya Sharma',
+    origin: 'India · Stream Selection',
   },
   {
-    quote: 'The corporate training programme she designed for our team was exceptional. Practical, engaging, and immediately applicable. Our communication metrics improved noticeably within a quarter.',
-    author: 'Vikram Mehta',
-    origin: 'India · Corporate Training',
+    quote: 'After three years in a job that didn\'t fulfil me, Sunita helped me identify my true strengths and pivot into a career I love. Her structured approach and one-on-one sessions were truly transformative.',
+    author: 'Karan Patel',
+    origin: 'UAE · Career Transition',
   },
   {
-    quote: 'I had given up on creative writing until I joined her course. She has a gift for drawing out the writer in every student. My first short story was published six months after starting.',
-    author: 'Lena Costa',
-    origin: 'Brazil · Creative Writing',
+    quote: 'The psychometric assessment was an eye-opener. Sunita\'s interpretation of my results helped me understand my aptitudes and interests in a way I never had before. Highly recommended for anyone at a career crossroads.',
+    author: 'Priya Nair',
+    origin: 'India · Graduate Counselling',
   },
   {
-    quote: 'Her personality development sessions are life-changing. She doesn\'t just teach you how to speak — she teaches you how to own the room. Highly recommended for young professionals.',
-    author: 'Omar Al-Farsi',
-    origin: 'Oman · Personality Development',
+    quote: 'As a parent, I was anxious about my son\'s subject choices. Sunita guided us with patience and expertise, helping him pick subjects that matched his strengths. A wonderful, reassuring experience.',
+    author: 'Meera Joshi',
+    origin: 'India · Parent Consultation',
   },
 ]
 
@@ -50,7 +50,7 @@ export default function TestimonialsSection() {
       id="testimonials"
       className="py-[130px] max-md:py-20 relative z-10"
       style={{
-        background: '#060F1E',
+        background: '#F5F2F8',
         borderRadius: '48px 48px 0 0',
         marginTop: '-24px',
       }}
@@ -58,8 +58,8 @@ export default function TestimonialsSection() {
       <div className="contain">
         <FadeIn y={30}>
           <p className="section-label">Testimonials</p>
-          <h2 className="font-heading text-[clamp(1.8rem,6vw,4rem)] leading-tight text-white font-semibold mb-8 md:mb-10">
-            What Students <em className="font-light italic text-teal-light not-italic">Say</em>
+          <h2 className="font-heading text-[clamp(1.8rem,6vw,4rem)] leading-tight font-semibold mb-8 md:mb-10" style={{ color: '#1A3330' }}>
+            What Individuals <em className="font-light italic not-italic" style={{ color: '#6DB8B8' }}>Say</em>
           </h2>
         </FadeIn>
 
@@ -67,11 +67,13 @@ export default function TestimonialsSection() {
           {TESTIMONIALS.map((t, i) => (
             <FadeIn key={i} y={20} delay={i * 0.1}>
               <div
-                className="rounded-[20px] md:rounded-[22px] transition-all duration-300 hover:border-gold/30 hover:-translate-y-1 overflow-hidden"
+                className="rounded-[20px] md:rounded-[22px] transition-all duration-300 hover:-translate-y-1 overflow-hidden"
                 style={{
-                  background: 'rgba(255,255,255,0.04)',
-                  border: '1px solid rgba(255,255,255,0.08)',
+                  background: '#F8FBF9',
+                  border: '1px solid rgba(0,0,0,0.06)',
                 }}
+                onMouseEnter={(e) => { e.currentTarget.style.borderColor = 'rgba(212,129,106,0.3)'; e.currentTarget.style.boxShadow = '0 8px 24px rgba(212,129,106,0.1)' }}
+                onMouseLeave={(e) => { e.currentTarget.style.borderColor = 'rgba(0,0,0,0.06)'; e.currentTarget.style.boxShadow = 'none' }}
               >
                 <div className="p-6 md:p-[32px_30px]">
                   {t.media && t.media.type === 'image' && (
@@ -104,17 +106,17 @@ export default function TestimonialsSection() {
                         loading="lazy"
                       />
                       <div className="absolute inset-0 flex items-center justify-center bg-black/20 group-hover:bg-black/30 transition-colors duration-300">
-                        <div className="w-14 h-14 rounded-full bg-gold/90 flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
-                          <Play size={22} fill="#0A1628" className="ml-0.5 text-navy" />
+                        <div className="w-14 h-14 rounded-full flex items-center justify-center transition-transform duration-300 group-hover:scale-110" style={{ background: 'rgba(212,129,106,0.9)' }}>
+                          <Play size={22} fill="#FFFFFF" className="ml-0.5" style={{ color: '#FFFFFF' }} />
                         </div>
                       </div>
                     </div>
                   )}
-                  <div className="font-heading italic text-[1.1rem] md:text-[1.08rem] text-text-light leading-relaxed">
+                  <div className="font-heading italic text-[1.1rem] md:text-[1.08rem] leading-relaxed" style={{ color: '#2D403C' }}>
                     &ldquo;{t.quote}&rdquo;
                   </div>
-                  <div className="w-8 h-px bg-gold/50 my-5" />
-                  <div className="text-[0.85rem] md:text-[0.8rem] text-gold font-semibold tracking-[0.08em]">
+                  <div className="w-8 h-px my-5" style={{ background: 'rgba(212,129,106,0.5)' }} />
+                  <div className="text-[0.85rem] md:text-[0.8rem] font-semibold tracking-[0.08em]" style={{ color: '#D4816A' }}>
                     {t.author}
                   </div>
                   <div className="text-[0.78rem] md:text-[0.72rem] text-text-muted mt-1">
@@ -130,14 +132,14 @@ export default function TestimonialsSection() {
           <div
             className="mt-6 rounded-[22px] p-12 text-center"
             style={{
-              border: '2px dashed rgba(201,168,76,0.3)',
-              background: 'rgba(201,168,76,0.03)',
+              border: '2px dashed rgba(212,129,106,0.3)',
+              background: 'rgba(212,129,106,0.04)',
             }}
           >
-            <p className="text-[0.85rem] text-text-muted leading-relaxed">
-              <span className="text-gold font-medium">Share Your Experience</span>
+            <p className="text-[0.85rem] leading-relaxed" style={{ color: '#6B7D79' }}>
+              <span style={{ color: '#D4816A', fontWeight: 500 }}>Share Your Experience</span>
               <br />
-              Your testimonial could appear here. If you have studied with Sunita, reach out via the contact section to share your journey.
+              Your testimonial could appear here. If you have been guided by Sunita, reach out via the contact section to share your journey.
             </p>
           </div>
         </FadeIn>
@@ -150,11 +152,14 @@ export default function TestimonialsSection() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             className="fixed inset-0 z-[200] flex items-center justify-center p-6 md:p-10"
-            style={{ background: 'rgba(6,15,30,0.95)' }}
+            style={{ background: 'rgba(0,0,0,0.85)' }}
             onClick={() => setMediaViewer(null)}
           >
             <button
-              className="absolute top-6 right-6 md:top-8 md:right-8 text-white cursor-pointer bg-none border-none z-10 hover:text-gold transition-colors"
+              className="absolute top-6 right-6 md:top-8 md:right-8 cursor-pointer bg-none border-none z-10 transition-colors"
+              style={{ color: '#FFFFFF' }}
+              onMouseEnter={(e) => e.currentTarget.style.color = '#D4816A'}
+              onMouseLeave={(e) => e.currentTarget.style.color = '#FFFFFF'}
               onClick={() => setMediaViewer(null)}
               aria-label="Close"
             >

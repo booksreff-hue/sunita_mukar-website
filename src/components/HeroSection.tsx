@@ -64,8 +64,8 @@ export default function HeroSection() {
       <div className="absolute inset-0 pointer-events-none"
         style={{
           background: `
-            radial-gradient(ellipse 70% 70% at 60% 40%, rgba(27,107,107,0.16) 0%, transparent 65%),
-            radial-gradient(ellipse 40% 50% at 20% 80%, rgba(201,168,76,0.07) 0%, transparent 60%)
+            radial-gradient(ellipse 70% 70% at 60% 40%, rgba(109,184,184,0.2) 0%, transparent 65%),
+            radial-gradient(ellipse 40% 50% at 20% 80%, rgba(212,129,106,0.1) 0%, transparent 60%)
           `,
         }}
       />
@@ -79,24 +79,24 @@ export default function HeroSection() {
         >
           <div className="flex flex-col items-center md:items-start text-center md:text-left">
             <motion.p className="section-label mb-3 md:mb-4" variants={child}>
-              English Trainer &amp; Communication Expert
+              A Certified &amp; Experienced Career Counselling Expert
             </motion.p>
 
             <motion.h1 variants={child}>
-              <span className="block font-heading text-[clamp(3rem,13vw,7rem)] font-bold text-white leading-[1.05]">
+              <span className="block font-heading text-[clamp(3rem,13vw,7rem)] font-bold leading-[1.05]" style={{ color: '#1A3330' }}>
                 Sunita
               </span>
-              <span className="block font-heading text-[clamp(3rem,13vw,7rem)] font-light italic text-teal-light leading-[1.05]">
+              <span className="block font-heading text-[clamp(3rem,13vw,7rem)] font-light italic leading-[1.05]" style={{ color: '#6DB8B8' }}>
                 Mukar
               </span>
             </motion.h1>
 
             <motion.p
               className="text-[1.05rem] md:text-[1rem] font-light max-w-[440px] leading-relaxed mt-5 mb-8 md:mt-6 md:mb-9"
-              style={{ color: '#D4C9B8' }}
+              style={{ color: '#2D403C' }}
               variants={child}
             >
-              Helping professionals and students find their voice, build confidence, and communicate with impact — across 13 countries and counting.
+              Dedicated to helping students and professionals make informed career decisions through psychometric assessments and personalised one-on-one counselling.
             </motion.p>
 
             <motion.div className="flex gap-3 md:gap-4 flex-wrap justify-center md:justify-start w-full max-w-[400px] md:max-w-none" variants={child}>
@@ -105,12 +105,13 @@ export default function HeroSection() {
             </motion.div>
 
             <motion.div
-              className="flex gap-6 md:gap-12 mt-10 md:mt-12 pt-6 md:pt-8 border-t border-white/10 justify-center md:justify-start flex-wrap w-full"
+              className="flex gap-6 md:gap-12 mt-10 md:mt-12 pt-6 md:pt-8 justify-center md:justify-start flex-wrap w-full"
+              style={{ borderTop: '1px solid rgba(0,0,0,0.06)' }}
               variants={child}
             >
               {[
                 { num: '10+', label: 'Years' },
-                { num: '13', label: 'Countries' },
+                { num: '150+', label: 'Individuals Guided' },
                 { num: '7+', label: 'Certifications' },
               ].map((stat) => (
                 <div key={stat.label}>
@@ -142,8 +143,8 @@ export default function HeroSection() {
                 willChange: 'transform',
               }}
             >
-              <div className="relative w-[220px] md:w-[420px] aspect-[3/4] rounded-2xl overflow-hidden border border-white/10"
-                style={{ boxShadow: '0 40px 80px rgba(42,157,143,0.25)' }}>
+              <div className="relative w-[220px] md:w-[420px] aspect-[3/4] rounded-2xl overflow-hidden"
+                style={{ border: '1px solid rgba(0,0,0,0.06)', boxShadow: '0 40px 80px rgba(212,129,106,0.2)' }}>
                 <AnimatePresence mode="wait">
                   <motion.img
                     key={index}
@@ -164,7 +165,7 @@ export default function HeroSection() {
                     onClick={() => { setIndex(i); setPaused(true); setTimeout(() => setPaused(false), 4000) }}
                     className="w-2 h-2 rounded-full transition-all duration-300 cursor-pointer border-none"
                     style={{
-                      background: i === index ? '#C9A84C' : 'rgba(255,255,255,0.25)',
+                      background: i === index ? '#D4816A' : 'rgba(0,0,0,0.15)',
                       width: i === index ? '20px' : '8px',
                     }}
                     aria-label={`Photo ${i + 1}`}

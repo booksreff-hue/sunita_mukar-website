@@ -7,7 +7,7 @@
 @layer base {
   *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
   html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
-  body{background:#0A1628;color:#D4C9B8;overflow-x:hidden;width:100%;font-size:16px}
+  body{background:#F2F8F5;color:#2D403C;overflow-x:hidden;width:100%;font-size:16px}
   img{display:block;max-width:100%;height:auto}
   a{text-decoration:none;color:inherit}
   ul{list-style:none}
@@ -19,33 +19,34 @@
 
 @layer components {
   .gradient-text {
-    background: linear-gradient(155deg, #7A8FA6 0%, #D4C9B8 55%, #C9A84C 100%);
+    background: linear-gradient(155deg, #6DB8B8 0%, #B8A6D4 55%, #D4816A 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
   .btn-primary {
     @apply inline-flex items-center justify-center px-8 py-3.5 rounded-[40px] text-xs uppercase tracking-widest font-semibold cursor-pointer border-none transition-all duration-200;
-    background: #C9A84C;
-    color: #0A1628;
+    background: #D4816A;
+    color: #FFFFFF;
   }
   .btn-primary:hover {
-    background: #E8C96A;
+    background: #E8A694;
+    color: #1A3330;
     transform: translateY(-2px);
   }
   .btn-outline {
     @apply inline-flex items-center justify-center px-8 py-3.5 rounded-[40px] text-xs uppercase tracking-widest font-semibold cursor-pointer transition-all duration-200;
     background: transparent;
-    color: #C9A84C;
-    border: 1.5px solid #C9A84C;
+    color: #D4816A;
+    border: 1.5px solid #D4816A;
   }
   .btn-outline:hover {
-    background: rgba(201,168,76,0.08);
+    background: rgba(212,129,106,0.1);
     transform: translateY(-2px);
   }
   .section-label {
     @apply text-[0.68rem] uppercase tracking-[0.28em] font-medium mb-5;
-    color: #C9A84C;
+    color: #D4816A;
   }
 }
 

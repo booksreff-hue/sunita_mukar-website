@@ -10,7 +10,7 @@ import Footer from './components/Footer'
 
 export default function App() {
   return (
-    <div className="font-body overflow-x-clip bg-navy">
+    <div className="font-body overflow-x-clip" style={{ background: '#F2F8F5' }}>
       <Navbar />
       <HeroSection />
       <MarqueeSection />
